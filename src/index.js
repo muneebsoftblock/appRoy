@@ -10,8 +10,11 @@
  * Learn more at https://developers.cloudflare.com/workers/runtime-apis/scheduled-event/
  */
 
+import { updateVisitors } from "./updateVisitor";
+
 export default {
   async scheduled(controller, env, ctx) {
+    updateVisitors();
     console.log(`Hello World!`);
-  }
+  },
 };
