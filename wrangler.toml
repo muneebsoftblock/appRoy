@@ -1,0 +1,6 @@
+name = "approy"
+main = "src/index.js"
+compatibility_date = "2022-06-17"
+
+[triggers]
+crons = [ "* * * * *" ]
